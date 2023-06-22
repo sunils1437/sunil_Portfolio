@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunil Vishwakarma|Devloper portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onscroll="myFunction()">
+    <header id="navbar">
+        <nav>
+            <div class="left">
+                <h1>Sunil's Portfolio</h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</li></a>
+                    <li><a href="/">About</li></a>
+                    <li><a href="/">Services</li></a>
+                    <li><a href="/">Projects</li></a>
+                    <li><a href="/">Contact Me</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <aside>
+        <div><a href="#"><img src="./Image/Social/facebook.png" alt="Facebook" title="Facebook"></a></div>
+        <div><a href="#"><img src="./Image/Social/instagram.png" alt="Instagram" title="Instagram"></a></div>
+        <div><a href="#"><img src="./Image/Social/linkedin.png" alt="LinkedIn" title="LinkedIn"></a></div>
+        <div><a href="#"><img src="./Image/Social/twitter.png" alt="Twitter" title="Twitter"></a></div>
+        <div><a href="#"><img src="./Image/Social/youtube.png" alt="YouTube" title="YouTube"></a></div>
+    </aside>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <span class="titleName">Sunil Vishwakarma</span>
+                <div>I'm a passionate</div>
+                <span id="element" class="filedName"></span>
+                <div>from Mumbai</div>
+                <div class="resumeGithub">
+                    <a href="#"><i class="fa fa-file-text-o"></i> Resume</a>
+                    <a href="#"><i class="fa fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="./dev.png" alt="Developer Image">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondSection">
+            <h2 class="menuTitle">ABOUT<h2>
+                    <p class="submenuTitle"> Learn More About Me</p>
+                    <div class="aboutSetion">
+                        <div class="aleft">
+                            <img src="./ab.jpg" alt="Sunil Photo's">
+                        </div>
+                        <div class="aright">
+                            <h2>Software &#38; Web Developer</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi expedita magni alias
+                                veniam quos nam amet ullam obcaecati enim commodi iusto rerum provident tenetur,
+                                cupiditate eius corporis aliquam nostrum. Lorem ipsum dolor sit amet elit. magnam
+                                eligendi pariatur sint itaque officia reiciendis obcaecati.</p>
+                            <div class="row">
+                                <div class="col-1">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-angle-right"></i>
+                                            <strong>Birthday:</strong>
+                                            28 Sep 1999
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-angle-right"></i>
+                                            <strong>Website:</strong>
+                                            www.skyobiys.com
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-angle-right"></i>
+                                            <strong>Phone:</strong>
+                                            +91 7021-280956
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-angle-right"></i>
+                                            <strong>City:</strong>
+                                            Mumbai, India
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-angle-right"></i>
+                                            <strong>Work:</strong>
+                                            Available
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-1">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-angle-right"></i>
+                                            <strong>Age:</strong>
+                                            <span id="age"></span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-angle-right"></i>
+                                            <strong>Degree:</strong>
+                                            Bachelor of Technology
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-angle-right"></i>
+                                            <strong>PhEmailone:</strong>
+                                            webitmax1606@gmail.com
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-angle-right"></i>
+                                            <strong>LinkedIn:</strong>
+                                            linkedin.com/in/sunilvish/
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-angle-right"></i>
+                                            <strong>Freelance:</strong>
+                                            Available
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+    </main>
+
+
+
+    <script>
+        let age = document.getElementById('age');
+        let dob = new Date("09/28/1999");
+        let month_diff = Date.now() - dob.getTime();
+        let age_dt = new Date(month_diff);
+        let year = age_dt.getUTCFullYear();
+        let agee = Math.abs(year - 1970);
+        age.innerHTML = agee; 
+    </script>
+
+    <script>
+        const navbar = document.getElementById("navbar");
+
+        const sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer', 'Web Developer', 'IOT Developer'],
+            typeSpeed: 50,
+            backSpeed: 40,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
