@@ -434,3 +434,73 @@ aside+main {
         margin-top: 65px;
     }
 }
+
+
+
+
+
+/* Skiils Progress Bar */
+.skill-container{
+    margin-bottom: 40px;
+}
+.skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.skills-row .skill-col {
+    flex: 50%;
+    max-width: 50%;
+}
+
+.skills-row .skill-col .skill-col-p {
+    margin-right: 20px;
+}
+
+.skill-col-p .progress {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.skill-col-p .progress .skill {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-col-p .progress .skill i:after {
+    content: '%';
+}
+
+.progress .progress-bar-wrap {
+    width: 100%;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.progress .progress-bar-wrap .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--icon);
+    transition: all 1s;
+}
+
+@media (max-width: 1100px) {
+    .skills-row .skill-col {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
