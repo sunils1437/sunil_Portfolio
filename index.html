@@ -11,13 +11,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- font-awesome -->
+    <!-- font-awesome and Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
+    <!-- Template Main CSS File -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body onscroll="myFunction()">
+    <!-- Header -->
     <header id="navbar">
         <nav>
             <div class="left">
@@ -35,6 +38,7 @@
         </nav>
     </header>
 
+    <!-- Aside Social Media -->
     <aside>
         <div><a href="#"><img src="./Image/Social/facebook.png" alt="Facebook" title="Facebook"></a></div>
         <div><a href="#"><img src="./Image/Social/instagram.png" alt="Instagram" title="Instagram"></a></div>
@@ -43,16 +47,19 @@
         <div><a href="#"><img src="./Image/Social/youtube.png" alt="YouTube" title="YouTube"></a></div>
     </aside>
 
+
+    <!-- Main -->
     <main>
+        <!-- First Section Name and Photo -->
         <section class="firstSection">
             <div class="leftSection">
                 <span class="titleName">Sunil Vishwakarma</span>
                 <div>I'm a passionate</div>
-                <span id="element" class="filedName"></span>
+                <span id="element" class="fieldName"></span>
                 <div>from Mumbai</div>
                 <div class="resumeGithub">
                     <a href="#"><i class="fa fa-file-text-o"></i> Resume</a>
-                    <a href="#"><i class="fa fa-github"></i> GitHub</a>
+                    <a href="#"><i class='fa fa-github'></i> GitHub</a>
                 </div>
             </div>
             <div class="rightSection">
@@ -62,86 +69,135 @@
 
         <hr>
 
+        <!-- Second Section About and Resume -->
         <section class="secondSection">
-            <h2 class="menuTitle">ABOUT<h2>
-                    <p class="submenuTitle"> Learn More About Me</p>
-                    <div class="aboutSetion">
-                        <div class="aleft">
-                            <img src="./ab.jpg" alt="Sunil Photo's">
+            <div class="section-title">
+                <h2 class="Section-title-name">ABOUT<h2>
+                <p> Learn More About Me</p>
+            </div>
+
+            <!-- Basic About Description -->
+            <div class="aboutSetion">
+                <div class="aleft">
+                    <img src="./ab.jpg" alt="Sunil Photo's">
+                </div>
+                <div class="aright">
+                    <h2>Software &#38; Web Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi expedita magni alias
+                        veniam quos nam amet ullam obcaecati enim commodi iusto rerum provident tenetur,
+                        cupiditate eius corporis aliquam nostrum. Lorem ipsum dolor sit amet elit. magnam
+                        eligendi pariatur sint itaque officia reiciendis obcaecati.</p>
+                    <div class="row">
+                        <div class="col-1">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-angle-right"></i>
+                                    <strong>Birthday:</strong>
+                                    28 Sep 1999
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-right"></i>
+                                    <strong>Website:</strong>
+                                    www.skyobiys.com
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-right"></i>
+                                    <strong>Phone:</strong>
+                                    +91 7021-280956
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-right"></i>
+                                    <strong>City:</strong>
+                                    Mumbai, India
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-right"></i>
+                                    <strong>Work:</strong>
+                                    Available
+                                </li>
+                            </ul>
                         </div>
-                        <div class="aright">
-                            <h2>Software &#38; Web Developer</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi expedita magni alias
-                                veniam quos nam amet ullam obcaecati enim commodi iusto rerum provident tenetur,
-                                cupiditate eius corporis aliquam nostrum. Lorem ipsum dolor sit amet elit. magnam
-                                eligendi pariatur sint itaque officia reiciendis obcaecati.</p>
-                            <div class="row">
-                                <div class="col-1">
-                                    <ul>
-                                        <li>
-                                            <i class="fa fa-angle-right"></i>
-                                            <strong>Birthday:</strong>
-                                            28 Sep 1999
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-angle-right"></i>
-                                            <strong>Website:</strong>
-                                            www.skyobiys.com
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-angle-right"></i>
-                                            <strong>Phone:</strong>
-                                            +91 7021-280956
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-angle-right"></i>
-                                            <strong>City:</strong>
-                                            Mumbai, India
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-angle-right"></i>
-                                            <strong>Work:</strong>
-                                            Available
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-1">
-                                    <ul>
-                                        <li>
-                                            <i class="fa fa-angle-right"></i>
-                                            <strong>Age:</strong>
-                                            <span id="age"></span>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-angle-right"></i>
-                                            <strong>Degree:</strong>
-                                            Bachelor of Technology
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-angle-right"></i>
-                                            <strong>PhEmailone:</strong>
-                                            webitmax1606@gmail.com
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-angle-right"></i>
-                                            <strong>LinkedIn:</strong>
-                                            linkedin.com/in/sunilvish/
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-angle-right"></i>
-                                            <strong>Freelance:</strong>
-                                            Available
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="col-1">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-angle-right"></i>
+                                    <strong>Age:</strong>
+                                    <span id="age"></span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-right"></i>
+                                    <strong>Degree:</strong>
+                                    Bachelor of Technology
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-right"></i>
+                                    <strong>PhEmailone:</strong>
+                                    webitmax1606@gmail.com
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-right"></i>
+                                    <strong>LinkedIn:</strong>
+                                    linkedin.com/in/sunilvish/
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-right"></i>
+                                    <strong>Freelance:</strong>
+                                    Available
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- Card's Work, Project etc. -->
+            <div class="card-row">
+                <div class="card-box">
+                    <div class="card">
+                        <i class="bi bi-emoji-smile"></i>
+                        <span>3</span>
+                        <p>Work With Companies</p>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card">
+                        <i class="bi bi-journal-richtext"></i>
+                        <span>5</span>
+                        <p>Projects</p>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card">
+                        <i class="bi bi-headset"></i>
+                        <span>3</span>
+                        <p>Hours Of Support</p>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card">
+                        <i class="bi bi-award"></i>
+                        <span>2</span>
+                        <p>Awards</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Skiils Progress Bar -->
+            <div class="skill-container">
+                <div class="section-title">
+                    <h2 class="Section-title-name">SKILLS<h2>
+                </div>
+                <div class="skills-row">
+
+                </div>
+            </div>
         </section>
     </main>
 
+    <br><br><br><br><br><br><br>
 
-
+    <!-- Script for Age Auto Update -->
     <script>
         let age = document.getElementById('age');
         let dob = new Date("09/28/1999");
@@ -152,11 +208,10 @@
         age.innerHTML = agee; 
     </script>
 
+    <!-- Script for Sticky NavBar -->
     <script>
         const navbar = document.getElementById("navbar");
-
         const sticky = navbar.offsetTop;
-
         function myFunction() {
             if (window.pageYOffset >= sticky) {
                 navbar.classList.add("sticky")
@@ -166,8 +221,9 @@
         }
     </script>
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Script for Typed JS -->
     <!-- Setup and start animation! -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
             strings: ['Software Developer', 'Web Developer', 'IOT Developer'],

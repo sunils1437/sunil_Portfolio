@@ -1,3 +1,4 @@
+/* Universal Style CSS */
 * {
     padding: 0;
     margin: 0;
@@ -13,6 +14,7 @@
     --menuT: #1e5696;
     --menuTL: #2e8fcf;
     --navh: rgb(255, 255, 255);
+    --icon: #bae6ff;
 }
 
 body {
@@ -20,7 +22,6 @@ body {
     color: var(--white);
     font-family: 'Poppins', sans-serif;
 }
-
 
 hr {
     border: 0;
@@ -37,42 +38,11 @@ h1 {
     letter-spacing: .3rem;
 }
 
-.menuTitle {
-    color: var(--menuT);
-    letter-spacing: .6rem;
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-.menuTitle:after {
-    content: "";
-    width: 130px;
-    height: 1.2px;
-    display: inline-block;
-    background: var(--menuTL);
-    margin: 4px 8px;
-
-}
-
-.submenuTitle {
-    font-size: 1.9rem;
-    text-transform: uppercase;
-    letter-spacing: .3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
 
 
 
 
-
-
-
-
-
-
-
-
+/* Header and Sticky Navbar */
 .sticky {
     position: fixed;
     top: 0;
@@ -120,9 +90,9 @@ nav ul li a:before {
     transition: all .5s;
 }
 
-/* nav ul li a:hover {
+nav ul li a:hover {
     color: var(--navh);
-} */
+}
 
 nav ul li a:after {
     display: block;
@@ -148,46 +118,62 @@ nav ul li a:hover:after {
     height: 100%;
 }
 
-/* @-webkit-keyframes fill {
-    0% {
-        width: 0%;
-        height: 1px;
-    }
-
-    50% {
-        width: 100%;
-        height: 1px;
-    }
-
-    100% {
-        width: 100%;
-        height: 100%;
-        background: #333;
-    }
-} */
 
 
 
 
-
-
-
-
-
-
-
-aside{
+/* Aside Social Media */
+aside {
     position: fixed;
     top: 130px;
     right: 15px;
 }
-aside a img{
+
+aside a img {
     width: 30px;
     margin: 3px 0;
 }
-aside+main{
+
+aside+main {
     padding-top: 100px;
-    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section Title */
+.section-title .Section-title-name {
+    color: var(--menuT);
+    letter-spacing: .6rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.section-title .Section-title-name:after {
+    content: "";
+    width: 130px;
+    height: 1.2px;
+    display: inline-block;
+    background: var(--menuTL);
+    margin: 4px 8px;
+}
+
+.section-title p {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 
@@ -209,9 +195,7 @@ aside+main{
 
 
 
-
-
-
+/* First Section Name and Photo */
 .firstSection {
     display: flex;
     justify-content: space-around;
@@ -227,10 +211,22 @@ aside+main{
     font-size: 3rem;
 }
 
+/* My Name and Field Name */
+.titleName {
+    color: var(--lnavbt);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.fieldName {
+    color: var(--lnavbt);
+    font-weight: 600;
+}
+
+/* Resume and Github btn */
 .resumeGithub {
     margin: 30px 0;
 }
-
 
 .resumeGithub a {
     margin: 0 20px;
@@ -269,26 +265,9 @@ aside+main{
     transition: all .1s;
 }
 
-/* .resumeGithub a:active:after {
-    background: transparent;
-    transition: all .1s;
-} */
-
 .resumeGithub a:hover:before {
     opacity: 1;
 }
-
-/* .resumeGithub a:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-} */
 
 @keyframes glowing {
     0% {
@@ -304,46 +283,17 @@ aside+main{
     }
 }
 
+/* Right Section Photo */
 .rightSection img {
     width: 80%;
 }
 
-.titleName {
-    color: var(--lnavbt);
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.filedName {
-    color: var(--lnavbt);
-    font-weight: 600;
-
-}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Second Section About and Resume */
 .secondSection {
     width: 80vw;
     margin: auto;
@@ -373,6 +323,7 @@ aside+main{
 }
 
 .aright p {
+    font-size: 1.4rem;
     font-weight: 400;
     letter-spacing: .5px;
 }
@@ -400,7 +351,6 @@ aside+main{
     margin-right: 10px;
 }
 
-
 @media (max-width: 1000px) {
 
     .aleft,
@@ -410,5 +360,77 @@ aside+main{
 
     .aleft img {
         width: 100%;
+    }
+}
+
+
+
+
+
+/* Card's Work, Project etc. */
+.card-row {
+    margin: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-box {
+    flex: 25%;
+    max-width: 25%;
+}
+
+.card {
+    text-align: center;
+    padding: 30px 25px;
+    position: relative;
+    margin: 0 15px;
+    background-color: var(--navbt);
+}
+
+.card-row .card-box .card p {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.card-row .card-box .card span {
+    font-size: 2rem;
+}
+
+.card-row .card-box .card i {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    padding: 20px;
+    color: var(--icon);
+    border-radius: 50%;
+    line-height: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Card's Work, Project etc. */
+@media (max-width: 1290px) {
+    .card-box {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .card-box:nth-child(3),
+    .card-box:nth-child(4) {
+        margin-top: 65px;
+    }
+}
+
+@media (max-width: 650px) {
+    .card-box {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .card-box:nth-child(2),
+    .card-box:nth-child(3),
+    .card-box:nth-child(4) {
+        margin-top: 65px;
     }
 }
