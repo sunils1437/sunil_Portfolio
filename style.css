@@ -440,9 +440,10 @@ aside+main {
 
 
 /* Skiils Progress Bar */
-.skill-container{
+.skill-container {
     margin-bottom: 40px;
 }
+
 .skills-row {
     display: flex;
     flex-wrap: wrap;
@@ -500,7 +501,49 @@ aside+main {
 
 
 
+/* Intrests */
+.intrest-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.intrest-row .intrest-card {
+    flex: 25%;
+    max-width: 25%;
+}
 
+.intrest-row .intrest-card .intrest-box {
+    background-color: var(--navbt);
+    margin: 10px;
+    height: 100px;
+}
 
-
+.intrest-box .intrest-icon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+.intrest-box .intrest-icon img {
+    margin-right: 15px;
+    width: 35px;
+}
+@media (max-width: 1130px){
+    .intrest-row .intrest-card {
+        flex: 33.3%;
+        max-width: 33.3%;
+    }
+}
+@media (max-width: 1020px){
+    .intrest-row .intrest-card {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media (max-width: 660px){
+    .intrest-row .intrest-card {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
